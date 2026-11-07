@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Resume Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <h2>Smart <span>Resume Builder</span></h2>
+    <div>
+        <button class="secondary" id="clearBtn">Clear Form</button>
+        <button id="downloadBtn">Download as PDF</button>
+    </div>
+</header>
+
+<main class="layout">
+
+<section class="editor">
+    <h1>Create Your Resume</h1>
+    <p>Enter your details and see your resume instantly.</p>
+
+    <form id="resumeForm">
+
+        <h3>Personal Information</h3>
+
+        <label>Full Name</label>
+        <input id="name" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Enter email" required>
+
+        <label>Phone</label>
+        <input id="phone" placeholder="Enter phone number">
+
+        <label>Location</label>
+        <input id="location" placeholder="City, State">
+
+        <label>LinkedIn / Portfolio</label>
+        <input id="linkedin" placeholder="Enter profile link">
+
+        <h3>Career Objective</h3>
+        <textarea id="summary" rows="4"
+            placeholder="Write your career objective"></textarea>
+
+        <h3>Education</h3>
+
+        <label>Degree</label>
+        <input id="degree" placeholder="B.Sc Information Technology">
+
+        <label>College Name</label>
+        <input id="college" placeholder="Enter college name">
+
+        <label>Year</label>
+        <input id="year" placeholder="2025 - 2028">
+
+        <label>CGPA / Grade</label>
+        <input id="grade" placeholder="Enter CGPA">
+
+        <h3>Skills</h3>
+        <textarea id="skills" rows="3"
+            placeholder="Java, HTML, CSS, SQL"></textarea>
+
+        <h3>Projects</h3>
+        <textarea id="projects" rows="4"
+            placeholder="Enter project details"></textarea>
+
+        <h3>Certifications</h3>
+        <textarea id="certifications" rows="3"
+            placeholder="Enter certifications"></textarea>
+
+        <h3>Experience / Internship</h3>
+        <textarea id="experience" rows="4"
+            placeholder="Enter internship details"></textarea>
+
+    </form>
+</section>
+
+<section class="preview-area">
+
+    <h2>Resume Preview</h2>
+
+    <article class="resume" id="resumePreview">
+
+        <div class="resume-header">
+            <h1 id="p-name">Your Name</h1>
+            <p id="p-contact">email@example.com</p>
+            <p id="p-link"></p>
+        </div>
+
+        <section class="resume-section">
+            <h3>PROFILE</h3>
+            <p id="p-summary">Your career objective appears here.</p>
+        </section>
+
+        <section class="resume-section">
+            <h3>EDUCATION</h3>
+            <h4 id="p-degree">Your Degree</h4>
+            <p id="p-college">College Name</p>
+            <p id="p-year"></p>
+            <p id="p-grade"></p>
+        </section>
+
+        <section class="resume-section">
+            <h3>SKILLS</h3>
+            <ul id="p-skills"></ul>
+        </section>
+
+        <section class="resume-section">
+            <h3>PROJECTS</h3>
+            <p id="p-projects">Your projects appear here.</p>
+        </section>
+
+        <section class="resume-section">
+            <h3>CERTIFICATIONS</h3>
+            <p id="p-certifications"></p>
+        </section>
+
+        <section class="resume-section">
+            <h3>EXPERIENCE</h3>
+            <p id="p-experience"></p>
+        </section>
+
+    </article>
+
+</section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
